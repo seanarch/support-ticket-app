@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import ticketService from "./ticketService";
+import ticketService from "./ticketService"; 
 
 const initialState = {
   tickets: [],
@@ -69,6 +69,8 @@ export const getTicket = createAsyncThunk(
     }
   }
 );
+
+
 
 // Close ticket
 export const closeTicket = createAsyncThunk(
